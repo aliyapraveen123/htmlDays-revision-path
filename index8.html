@@ -3,33 +3,23 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Student Registration-Form</title>
+        <title>Travel Blog</title>
     </head>
     
     <body>
         <fieldset>
-            <legend>Student's Registration Form:------</legend>
+            <legend>Job Application Form:------</legend>
 
-            <form>
-                <label for="Roll-No.">Roll-No.:</label><br>
-                <input 
-                  type="text" 
-                  id="Roll-No." 
-                  placeholder="Enter Your Roll No." 
-                  name="Roll-No."
-                  required><br><br>
-
-                <label for="StudentName">Student's Name:</label><br>
+                <label for="Name">Name:</label><br>
                 <input 
                    type="text" 
-                   id="StudentName" 
+                   id="Name" 
                    placeholder="First-Name" 
                    name="First-Name"
-                   autocomplete="name"
                    required>
                 <input
                    type="text" 
-                   id="StudentName" 
+                   id="Name" 
                    placeholder="Last-Name"
                    name="Last-Name" 
                    required><br><br>
@@ -87,50 +77,39 @@
                   name="Gender">
                 <label for="Female">Female</label>
 
-                <p>Department:</p>
+                <p>Applied Position</p>
 
                 <input
                   type="Checkbox"
-                  value="CSE"
-                  name="Department">
-                <label for="Department">Science</label>
+                  value="Frontend"
+                  name="Applied Position">
+                <label for="Applied Position">Frontend-Developer</label><br>
                 
                 <input
                   type="Checkbox"
-                  value="IT"
-                  name="Department">
-                <label for="Department">Commerce</label>
+                  value="backend"
+                  name="Applied Position">
+                <label for="Applied Position">Backend-Developer</label><br>
 
                 <input
                   type="Checkbox"
-                  value="ECE"
-                  name="Department">
-                <label for="Department">ECE</label>
+                  value="MERN Stack"
+                  name="Applied Position">
+                <label for="Applied Position">MERN Stack</label><br>
 
                 <input
                   type="Checkbox"
-                  value="MECH"
-                  name="Department"
+                  value="Data Analyst"
+                  name="Applied Position"
                   disabled>
-                <label for="Department">MECH</label><br><br>
-
-                
-               <label for="Courses">Courses:</label>
-               <select name="Courses" id="Courses">
-                 <optgroup label="Science">
-                  <option value="BSC">BSC</option>
-                  <option value="B.Tech">B.Tech</option>
-                 </optgroup>
-
-                 <optgroup label="Commerce">
-                  <option value="B.COM">B.Com</option>
-                  <option value="Economics">Economics</option>
-                 </optgroup>
-               </select><br><br>
+                <label for="Applied Position">Data Analyst</label><br><br>
                 
 
-               <label for="Student-photo">Student Photo:</label>
-               <input type="file" id="Student-photo" name="Student-photo"><br><br>
+               <label for="Resume">Resume:</label><br>
+               <input type="file" id="Resume" name="resume"><br><br>
+
+               <label for="other-document">Any Other Document to Upload:</label><br>
+               <input type="file" id="other-document" name="other-document"><br><br>
 
                <label for="Address">Address:</label><br>
                <textarea id="Address" name="Address" rows="4" cols="20"></textarea><br><br>
@@ -139,5 +118,6 @@
                <input type="Submit" value="Submit">
             </form>
         </fieldset>
+
     </body>
-</html>      
+</html>    
