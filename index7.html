@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Registration-Form</title>
+    </head>
+    
+    <body>
+        <fieldset>
+            <legend>Student's Registration Form:------</legend>
+
+            <form>
+                <label for="Roll-No.">Roll-No.:</label><br>
+                <input 
+                  type="text" 
+                  id="Roll-No." 
+                  placeholder="Enter Your Roll No." 
+                  name="Roll-No."
+                  required><br><br>
+
+                <label for="StudentName">Student's Name:</label><br>
+                <input 
+                   type="text" 
+                   id="StudentName" 
+                   placeholder="First-Name" 
+                   name="First-Name"
+                   autocomplete="on"
+                   required>
+                <input
+                   type="text" 
+                   id="StudentName" 
+                   placeholder="Last-Name"
+                   name="Last-Name" 
+                   required><br><br>
+                
+                <label for="DOB">Date-of-Birth</label><br>
+                <input 
+                  type="Date" 
+                  id="DOB"
+                  placeholder="Date-of-Birth"><br><br>
+                
+                <label for="Mobile-no.">Mobile No.:</label><br>
+                 <input
+                    type="text" 
+                    value="+91"
+                    readonly
+                    >
+
+                 <input
+                   type="tel"
+                   id="Mobile-no."
+                   name="mobile-no."
+                   placeholder="9876543210"
+                   pattern="[0-9]{10}"
+                   required><br><br>
+
+                <label for="email-id">Email id:</label><br> 
+                <input
+                  type="email"
+                  id="email-id"
+                  placeholder="email-id"
+                  name="email-id"
+                  required><br><br>
+                
+                <label for="Password">Password:</label><br>
+                <input
+                  type="password"
+                  id="Password"
+                  placeholder=" Enter password"
+                  name="password"
+                  minlength="3"
+                  maxlength="6"
+                  required><br><br>
+                
+                <p>Gender:</p>
+
+                <input
+                  type="radio"
+                  value="Male"
+                  name="Gender">
+                <label for="Male">Male</label>
+
+                <input
+                  type="radio"
+                  value="Female"
+                  name="Gender">
+                <label for="Female">Female</label>
+
+                <p>Department:</p>
+
+                <input
+                  type="Checkbox"
+                  value="CSE"
+                  name="Department">
+                <label for="Department">Science</label>
+                
+                <input
+                  type="Checkbox"
+                  value="IT"
+                  name="Department">
+                <label for="Department">Commerce</label>
+
+                <input
+                  type="Checkbox"
+                  value="ECE"
+                  name="Department">
+                <label for="Department">ECE</label>
+
+                <input
+                  type="Checkbox"
+                  value="MECH"
+                  name="Department"
+                  disabled>
+                <label for="Department">MECH</label><br><br>
+
+                
+               <label for="Courses">Courses:</label>
+               <select name="Courses" id="Courses">
+                 <optgroup label="Science">
+                  <option value="BSC">BSC</option>
+                  <option value="B.Tech">B.Tech</option>
+                 </optgroup>
+
+                 <optgroup label="Commerce">
+                  <option value="B.COM">B.Com</option>
+                  <option value="Economics">Economics</option>
+                 </optgroup>
+               </select><br><br>
+                
+
+               <label for="Student-photo">Student Photo:</label>
+               <input type="file" id="Student-photo" name="Student-photo"><br><br>
+
+               <label for="Address">Address:</label><br>
+               <textarea id="Address" name="Address" rows="4" cols="20"></textarea><br><br>
+               
+               
+               <input type="Submit" value="Submit">
+            </form>
+        </fieldset>
+    </body>
+</html>      
